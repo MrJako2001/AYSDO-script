@@ -59,7 +59,7 @@ export function formatDate (date, options) {
   const year = formattedDate.getFullYear()
 
   // Creamos el formato "7/24/2023"
-  const formattedDateString = `${month}/${day}/${year}`
+  const formattedDateString = `${day}/${month}/${year}`
 
   return formattedDateString
 }
@@ -154,7 +154,7 @@ const sanitizeDefaults = {
   locale: 'es-ES',
   snippet: 100,
   format: {
-    month: 'numeric',
+    month: '2-digit',
     day: '2-digit',
     year: 'numeric'
   },

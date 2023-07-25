@@ -1,7 +1,7 @@
-const scriptsToLoad = ["tabs"];
+const scriptsToLoad = ["online"];
 
 const scriptLinks = [
-    {name:"tabs", link: "sddsdsdds"}
+    {name:"online", link: "https://mrjako2001.github.io/AYSDO-script/onlinePlayer.js"}
 ]
 
 const scripter = (scriptName) => {
@@ -26,7 +26,8 @@ const scriptsLoad = (scriptsNames) => {
         scripter(script);
     });
 }
-
-if (Array.isArray(scriptsToLoad)) {
-    scriptsLoad(scriptsToLoad);
-}
+document.addEventListener("DOMContentLoaded", () => {
+    if (scriptsLoad && Array.isArray(scriptsToLoad)) {
+        scriptsLoad(scriptsToLoad)
+    }
+});

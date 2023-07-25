@@ -279,6 +279,4 @@ const initializeOnlinePlayer = () => {
         console.log("No se encontro la lista de capitulos o el estado de emisión");
     }
 };
-document.addEventListener("DOMContentLoaded", function() {
-    initializeOnlinePlayer();
-});
+initializeOnlinePlayer();
