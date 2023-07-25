@@ -181,7 +181,7 @@ const chaptersOrder = (chaptersContainerContainer, chaptersContainer) => {
 };
 /* === FUNCIÓN PRINCIPAL PARA EL REPRODUCTOR DE VIDEO === */
 const initializeOnlinePlayer = () => {
-    if (chaptersList && chaptersList > 0 && releasing) {
+    if (chaptersList && chaptersList.length > 0 && releasing) {
         // Contenedor de las __ versiones __ (donde van a ir cada menu desplegable)
         const versionsContainer = document.getElementById("options-versions");
         // Contenedor donde va el __ nombre del capitulo actual __
@@ -279,6 +279,4 @@ const initializeOnlinePlayer = () => {
         console.log("No se encontro la lista de capitulos o el estado de emisión");
     }
 };
-document.addEventListener("DOMContentLoaded", () => {
-    initializeOnlinePlayer();
-});
+initializeOnlinePlayer();
